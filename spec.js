@@ -1,8 +1,12 @@
 describe('Enter GURU99 Name', function() {
 	it('should add a Name as GURU99', function() {
 		 browser.get('https://angularjs.org');
- 		 element(by.model('yourName')).sendKeys('GURU99');
-  		 var guru= element(by.xpath('html/body/div[2]/div[1]/div[2]/div[2]/div/h3'));
-		 expect(guru.getText()).toEqual('Hello GURU99!');
+ 		 element(by.model('yourName')).sendKeys('Cybertek');
+          element(by.binding('yourName')).getText().then(function(text){
+            console.log(text);
+          });
+        
+          //  var guru= element(by.binding('yourName'));
+		//  expect(guru.getText()).toEqual('Hello GURU99!');
   });
 });
