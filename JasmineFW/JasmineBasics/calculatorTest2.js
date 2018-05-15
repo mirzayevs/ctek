@@ -17,7 +17,7 @@ describe('Validating the Calculator app', () => {
             element(by.buttonText('Go!')).click();
             expectedText= element(by.binding('latest')).getText();
               expectedText.then(function(text){
-                expect(text).toBe('14');
+                expect(parseInt(text)).toBe(14);
               });
         });
 
@@ -27,7 +27,7 @@ describe('Validating the Calculator app', () => {
             element(by.buttonText('Go!')).click();
             expectedText= element(by.binding('latest')).getText();
               expectedText.then(function(text){
-                expect(text).not.toBe('10');
+                expect(parseInt(text)).not.toBe(10);
               });
         });
 
@@ -39,7 +39,7 @@ describe('Validating the Calculator app', () => {
             element(by.buttonText('Go!')).click();
             expectedText= element(by.binding('latest')).getText();
               expectedText.then(function(text){
-                expect(text).toBe('12');
+                expect(parseInt(text)).toBe(12);
               });
         });
 
