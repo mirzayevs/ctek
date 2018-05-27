@@ -6,7 +6,7 @@ exports.config = {
         capabilities: {
              'browserName': 'chrome'    }, 
     //Spec patterns are relative to the current working directly when protractor is called. 
-         specs: ['JasmineFW/JasmineBasics/calculatorTest2.js'],     
+    specs: ['ObjectsJson/gmailTest.js'],    
     //framework to be used:
 	//framework: 'jasmine2',
     // Options to be passed to Jasmine-node. 

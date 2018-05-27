@@ -5,17 +5,21 @@ exports.config = {
 
 	directConnect: true,
 
+
+
 	// Capabilities to be passed to the webdriver instance.
-	multiCapabilities: [{
-		browserName: 'chrome'
-	}],
+	capabilities: {
+		browserName: 'chrome',
+
+
+	},
 
 
 	framework: 'jasmine2',
 
 
 
-	specs: ['./functional/logintest.spec.js'],
+	specs: ['./rough/CustomerLogin.js'],
 
 	/*suites: {
 
